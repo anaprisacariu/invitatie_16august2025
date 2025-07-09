@@ -4,115 +4,90 @@
   <meta charset="UTF-8">
   <title>Alina & Cătălin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mulish:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Mulish:wght@300;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     html {
       scroll-behavior: smooth;
     }
-
     body {
       font-family: 'Mulish', sans-serif;
-      line-height: 1.6;
       color: #333;
     }
-
     header {
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.95);
       display: flex;
       justify-content: center;
       padding: 10px 0;
       z-index: 1000;
     }
-
     nav a {
       margin: 0 15px;
       text-decoration: none;
       color: #555;
       font-weight: 500;
     }
-
     nav a:hover {
       color: #000;
     }
 
-    section {
+    .hero {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      text-align: center;
+      align-items: center;
       position: relative;
+      text-align: center;
       overflow: hidden;
     }
-
-    .hero img.hero-bg {
+    .hero img {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 0; left: 0;
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       z-index: 0;
     }
-
     .hero-content {
       position: relative;
       z-index: 1;
       color: white;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* text vizibil pe imagine */
+      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
     }
-
     .hero h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 4rem;
-      margin-bottom: 10px;
+      font-size: 4.5rem;
     }
-
     .hero h2 {
-      font-size: 1.7rem;
-      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin: 10px 0;
     }
-
     .hero p {
       font-style: italic;
       font-size: 1.2rem;
     }
 
-    .content {
+    section.content {
       padding: 80px 20px;
+      text-align: center;
     }
-
     .content h3 {
-      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
       margin-bottom: 15px;
     }
-
     .content p {
       max-width: 600px;
       margin: 0 auto 10px;
-    }
-
-    .youtube {
-      margin: 30px auto;
-      width: 100%;
-      max-width: 560px;
-      aspect-ratio: 16 / 9;
-    }
-
-    .youtube iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 8px;
     }
 
     footer {
@@ -144,7 +119,7 @@
 </header>
 
 <section class="hero" id="despre">
-  <img src="background_cuplu.jpg" alt="Alina și Cătălin" class="hero-bg">
+  <img src="background_cuplu.jpg" alt="Alina și Cătălin">
   <div class="hero-content">
     <h1>Alina & Cătălin</h1>
     <h2>16 August 2025 • București</h2>
@@ -162,9 +137,6 @@
   <h3>Petrecere & Masa restrânsă</h3>
   <p>Împreună cu nașii noștri: Iuliana și George Stănilă</p>
   <p>🍽 Începând cu ora 15:30 – Restaurant Zexe, Zahanaua Gastronomică (Bd. Aviatorilor nr.40)</p>
-  <div class="youtube">
-    <iframe src="https://www.youtube.com/embed/PmeRiTUS_aU?autoplay=1&mute=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
 </section>
 
 <section class="content" id="contact">
