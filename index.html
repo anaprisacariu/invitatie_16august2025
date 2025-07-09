@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Alina & Cătălin</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mulish:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Mulish', sans-serif; line-height:1.6; color:#333; }
+    header { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.9);
+             display:flex; justify-content:center; padding:10px 0; z-index:1000; }
+    nav a { margin: 0 15px; text-decoration:none; color:#555; font-weight:500; }
+    nav a:hover { color:#000; }
+
+    section { padding:100px 20px; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+    .hero { background:url('background_cuplu.jpg') center/cover no-repeat; position:relative; color:white; }
+    .hero::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.5); }
+    .hero-content { position:relative; z-index:1; }
+
+    .hero h1 { font-family:'Great Vibes',cursive; font-size:3.5rem; }
+    .hero h2 { font-size:1.5rem; margin:10px 0; }
+    .hero p { font-style:italic; font-size:1.1rem; }
+
+    .content h3 { font-size:2rem; margin-bottom:15px; }
+    .content p { max-width:600px; margin-bottom:10px; }
+
+    .youtube { margin:30px 0; width:100%; max-width:560px; aspect-ratio:16/9; }
+    .youtube iframe { width:100%; height:100%; border:none; border-radius:8px; }
+
+    footer { padding:20px; background:#111; color:#eee; text-align:center; }
+
+    @media(max-width:600px){
+      .hero h1 { font-size:2.5rem; }
+      .hero h2 { font-size:1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#despre">Despre</a>
+    <a href="#cununie">Cununie</a>
+    <a href="#petrecere">Petrecere</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="despre">
+  <div class="hero-content">
+    <h1>Alina & Cătălin</h1>
+    <h2>16 August 2025 • București</h2>
+    <p>„Două inimi. O singură promisiune. Cu tine de mână și atât.”</p>
+  </div>
+</section>
+
+<section class="content" id="cununie">
+  <h3>Cununia religioasă</h3>
+  <p>Cu binecuvântarea părinților: Daniel și Maria Beți – Gigică † și Mariana Munteanu</p>
+  <p>🏛 Ora: 14:00 – Catedrala Sfântul Iosif (Str. General Berthelot nr.17, Sector 1, București)</p>
+</section>
+
+<section class="content" id="petrecere">
+  <h3>Petrecere & Masa restrânsă</h3>
+  <p>Împreună cu nașii noștri: Iuliana și George Stănilă</p>
+  <p>🍽 Începând cu ora 15:30 – Restaurant Zexe, Zahanaua Gastronomică (Bd. Aviatorilor nr.40)</p>
+  <div class="youtube">
+    <iframe src="https://www.youtube.com/embed/PmeRiTUS_aU?autoplay=1&mute=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="content" id="contact">
+  <h3>Contact & Confirmări</h3>
+  <p>Vă rugăm să vă confirmați prezența până la 1 August 2025</p>
+  <p>📞 Alina: 07xx xxx xxx</p>
+  <p>📞 Cătălin: 07yy yyy yyy</p>
+</section>
+
+<footer>
+  Cu drag, <br> Alina & Cătălin
+</footer>
+
+</body>
+</html>
