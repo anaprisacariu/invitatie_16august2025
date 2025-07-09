@@ -6,25 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mulish:wght@300;500&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Mulish', sans-serif; line-height: 1.6; color: #333; }
-    header { 
-      position: fixed; top: 0; width: 100%; 
-      background: rgba(255, 255, 255, 0.9);
-      display: flex; justify-content: center; 
-      padding: 10px 0; z-index: 1000; 
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    nav a { margin: 0 15px; text-decoration: none; color: #555; font-weight: 500; }
-    nav a:hover { color: #000; }
 
-    section { 
-      min-height: 100vh; 
-      display: flex; 
-      flex-direction: column; 
-      align-items: center; 
-      justify-content: center; 
-      text-align: center; 
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Mulish', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       padding: 100px 20px;
       position: relative;
       overflow: hidden;
@@ -35,44 +61,75 @@
       inset: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: cover; /* Umple secțiunea fără deformare */
       z-index: 0;
+      image-rendering: auto; /* Anti-blur pentru claritate */
     }
 
-    .hero-content { 
-      position: relative; 
-      z-index: 1; 
+    .hero-content {
+      position: relative;
+      z-index: 1;
       color: white;
-      background: rgba(0, 0, 0, 0.4); /* overlay pentru lizibilitate */
-      padding: 20px;
+      background: rgba(0, 0, 0, 0.4); /* Overlay semi-transparent pentru text */
+      padding: 20px 30px;
       border-radius: 10px;
+      backdrop-filter: blur(2px); /* efect modern */
     }
 
-    .hero h1 { 
-      font-family: 'Great Vibes', cursive; 
-      font-size: 3.5rem; 
+    .hero h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
       margin-bottom: 10px;
     }
-    .hero h2 { 
-      font-size: 1.5rem; 
-      margin-bottom: 10px; 
-    }
-    .hero p { 
-      font-style: italic; 
-      font-size: 1.1rem; 
+
+    .hero h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
     }
 
-    .content h3 { font-size: 2rem; margin-bottom: 15px; }
-    .content p { max-width: 600px; margin-bottom: 10px; }
+    .hero p {
+      font-style: italic;
+      font-size: 1.1rem;
+    }
 
-    .youtube { margin: 30px 0; width: 100%; max-width: 560px; aspect-ratio: 16/9; }
-    .youtube iframe { width: 100%; height: 100%; border: none; border-radius: 8px; }
+    .content h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
 
-    footer { padding: 20px; background: #111; color: #eee; text-align: center; }
+    .content p {
+      max-width: 600px;
+      margin-bottom: 10px;
+    }
 
-    @media(max-width:600px){
-      .hero h1 { font-size: 2.5rem; }
-      .hero h2 { font-size: 1.2rem; }
+    .youtube {
+      margin: 30px 0;
+      width: 100%;
+      max-width: 560px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .youtube iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      padding: 20px;
+      background: #111;
+      color: #eee;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero h2 {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
